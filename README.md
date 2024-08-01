@@ -40,18 +40,11 @@ Se utiliza este efecto como base del juego, ya que por medio de esta aplicación
     Cada una de estas clases definen acciones CRUD orientadas a trabajar directamente en la API (con las que tienen las terminaciones API) o trabajar con un frontend distinto pero igual controlando el API (con las que carecen de esta)</p>
     <b><li>motos_api/urls.py</li></b>
     <p>Aquí podremos definir qué vistas tienen qué clases creadas en views.py, por ejemplo, si queremos cambiar la vista inicial para ver la API, cambiamos las clases de MotoListView a MotoListAPIView</p>
-    <b><li>Juego.dart</li></b>
-    <p>Se presenta esta pantalla iniciando el juego de modo normal o de manera personalizada, ya que ambas redirecciones contienen los mismos parámetros, aquí se almacenan        varias vistas que se mostrarán si has o no has empezado el juego todavia o si lo has terminado</p>
-    <b><li>Leaderboard.dart</li></b>
-    <p>Lista de los 5 mejores puntajes guardados de manera local, estos son sobreescritos cuando reinicias la aplicación</p>
-    <b><li>Config.dart</li></b>
-    <p>En esta pantalla (que es un drawer) Encontrarás inputs para que configures el juego a tu gusto, siendo dos de estos inputs también configurables para el juego en modo       contrarreloj</p>
-    <b><li>Contrarreloj.dart</li></b>
-    <p>Similar a juego pero no se incluye la variable de intentos, ya que este modo de juego funciona según la cantidad de tiempo que se haya escrito en la configuración, al      llegar el contador a 0, se acabará la partida no importa cuánto te equivoques</p>
-    <b><li>Providers/counter_providers.dart</li></b>
-    <p>Utilizamos providers para cambiar y almacenar nuevos datos que se registran en el juego personalizado, cuando escribas una configuración, la aplicación se asegura de       guardarla por si quieres volver a empezar tu juego personalizado con la misma configuración. A su vez, guarda y almacena todos los registros de puntuación para 
-    después ordenarlo de mayor a menor, ningún puntaje se sobreescribirá   
-    menor</p>
-  </ul>
+    <b><li>templates/view.html</li></b>
+    <p>Vista inicial a la que accedes cuando agregas /motos/ al URL, aqui podemos ver un listado de todas las motos que contiene nuestra API, y aquí mismo incluimos el funcionamiento de nuestro botón ELIMINAR por medio de un modal y un form que administra la función DELETE</p>
+    <b><li>templates/create.html</li></b>
+    <p>Formulario de creación de un elemento o una moto, todos los datos son requeridos para la creación de este</p>
+    <b><li>templates/update.html</li></b>
+    <p>Formulario para actualizar un elemento o una moto, se indica la referencia de la moto para saber qué estamos editando, asi como todos los datos del elemento creado en los inputs</p>
 
 
