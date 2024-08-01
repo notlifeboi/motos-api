@@ -36,9 +36,10 @@ Se utiliza este efecto como base del juego, ya que por medio de esta aplicación
 <p>Conoce las funcionalidades de la aplicación para que te orientes en el código (La mayoria de este está documentado para que sepas qué hace cada cosa)</p>
   <ul>
     <b><li>Motos_api/views.py</li></b>
-    <p>En views podemos distinguir dos tipos de clases, las que contienen un "API" y las que no, como por ejemplo:</p>
-    <b><li>Menu.dart</li></b>
-    <p>Päntalla inicial de nuestra aplicación, con botones de redirección al leaderboard o puntuaciones locales del usuario, coniguración de juego personalizado o iniciar el      juego el modo normal (Vanilla)</p>
+    <p>En views podemos distinguir dos tipos de clases, las que contienen un "API" y las que no, como por ejemplo: MotoListApiView(APIView) | MotoListView(View)
+    Cada una de estas clases definen acciones CRUD orientadas a trabajar directamente en la API (con las que tienen las terminaciones API) o trabajar con un frontend distinto pero igual controlando el API (con las que carecen de esta)</p>
+    <b><li>motos_api/urls.py</li></b>
+    <p>Aquí podremos definir qué vistas tienen qué clases creadas en views.py, por ejemplo, si queremos cambiar la vista inicial para ver la API, cambiamos las clases de MotoListView a MotoListAPIView</p>
     <b><li>Juego.dart</li></b>
     <p>Se presenta esta pantalla iniciando el juego de modo normal o de manera personalizada, ya que ambas redirecciones contienen los mismos parámetros, aquí se almacenan        varias vistas que se mostrarán si has o no has empezado el juego todavia o si lo has terminado</p>
     <b><li>Leaderboard.dart</li></b>
