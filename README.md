@@ -1,5 +1,5 @@
 <h1 align="center">API Motos</h1>
-<p align="center">Aplicación desarrollada en el framework Flutter basada en el efecto Stroop, la aplicación incluye un menú para empezar el juego, sistema de puntajes y un modo para configurar tu propia partida personalizada o empezar una partida contrarreloj</p>
+<p align="center">Aplicación desarrollada en el framework Django basada en la aplicación de APIs, donde por medio de un frontend podemos agregar, actualizar o eliminar elementos dentro de ella</p>
 
 <h2>Efecto Stroop</h2>
 <p>El efecto Stroop, es una interferencia semántica que se da a causa de tener automatizada la lectura, haciendo que demos prioridad, inconscientemente, aquellos estímulos que vengan en forma de palabras escritas antes que en otras modalidades, como pueden ser forma o color. Por ejemplo, la palabra ‘AZUL’ está pintada de color amarillo, la palabra ‘VERDE’ viene pintada de color rojo, y así sucesivamente.</p>
