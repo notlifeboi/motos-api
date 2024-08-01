@@ -35,8 +35,8 @@ Se utiliza este efecto como base del juego, ya que por medio de esta aplicación
 <h2>Funcionamiento de la aplicación</h2>
 <p>Conoce las funcionalidades de la aplicación para que te orientes en el código (La mayoria de este está documentado para que sepas qué hace cada cosa)</p>
   <ul>
-    <b><li>Main.dart</li></b>
-    <p>Se crea la pantalla de carga inicial, y se define el home que en este caso será menu.dart</p>
+    <b><li>Motos_api/views.py</li></b>
+    <p>En views podemos distinguir dos tipos de clases, las que contienen un "API" y las que no, como por ejemplo:</p>
     <b><li>Menu.dart</li></b>
     <p>Päntalla inicial de nuestra aplicación, con botones de redirección al leaderboard o puntuaciones locales del usuario, coniguración de juego personalizado o iniciar el      juego el modo normal (Vanilla)</p>
     <b><li>Juego.dart</li></b>
